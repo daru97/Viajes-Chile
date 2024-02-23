@@ -1,55 +1,87 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Cabin", sans-serif;
-    
-  }
-  :root {
-    --main-bg-color: #0dcaf0;
-  }
-  
-  .navbar {
-    background-color: none;
-  }
-  .navbar-brand img {
-    height: 20px;
-  }
+  margin: 0px;
+  padding: 0px;
+  font-family: "Cabin", sans-serif;
 
-  section{
-    background-color: #000;
-  }
- 
- #bodyTitles{
- text-transform: uppercase;
- }
+}
 
-  h1 {
-    font-size: 1rem;
-    font-weight: 600;
-    height: auto;
-    width:auto;
-    color: #fff;
+:root {
+  --main-bg-color: #0dcaf0;
+}
 
-  }
-  
-  .card-img-top{
-    height: 10rem;
-    width: auto;
-    border-radius: 0px;
-  }
-  .card-title{
-    font-size: 23pt;
-    padding-bottom: 2px;
-  }
-  .card-text{
-    font-size: 16pt;
-  }
+.navbar {
+  background-color: none;
+  font-size: 1.2rem;
+}
 
-  .card-body, #fondoIcon, footer {
-    background: var(--main-bg-color);
-  }
+.navbar-brand img {
+  height: 2rem;
+}
 
-  
+#nombre {
+  font-size: 1.2rem;
+  color: #fff;
+}
 
+section {
+  background-color: #000;
+}
 
-  
+#bodyTitles {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  height: auto;
+  width: auto;
+  color: #fff;
+
+}
+
+#icono1 {
+  font-size: 2rem;
+}
+
+.card-img-top {
+  height: 10rem;
+  width: auto;
+  border-radius: 0px;
+}
+
+.card-title {
+  font-size: 23pt;
+  padding-bottom: 2px;
+}
+
+.card-text {
+  font-size: 16pt;
+}
+
+.card-body,
+.fondoIcon,
+footer {
+  background: var(--main-bg-color);
+}
+
+i {
+  color: #fff;
+}
+
+footer div {
+  color: #fff;
+  display: flex;
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-left: 20rem;
+}
+
+.social-icons {
+  font-size: 2rem;
+  padding-left: 38rem;
+
+}

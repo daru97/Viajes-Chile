@@ -30,10 +30,11 @@
 
 <body>
   <!-- menu -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container px-4">
       <a class="navbar-brand" href="#">
-        <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"
+          id="nombre">
         Viajes Chile
       </a>
       <button class="navbar-toggler navbar-dark border-light" type="button" data-bs-toggle="collapse"
@@ -47,19 +48,20 @@
             <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Quienes somos</a>
+            <a class="nav-link text-light" href="#1">Quienes somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Destacados</a>
+            <a class="nav-link text-light" href="#2">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Contacto</a>
+            <a class="nav-link text-light" href="#3">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav><!--BUSCAR COMO HACER QUE EL NAV AL COMENZAR A BAJAR SE PONGA CON COLOR, smooth scrolling-->
+  </nav>
 
+  <!--Header section, imagenes en carrusel-->
   <header>
     <div id="carouselExample" class="carousel slide">
       <div class="carousel-inner">
@@ -88,12 +90,13 @@
   <section class="d-none d-sm-none d-lg-block pt-5">
     <div class="container">
       <div id="bodyTitles">
-        <h2 class="text-center text-light fw-light border-bottom border-dark border-2 pb-4">¿Quienes Somos?</h2>
+        <h2 class="text-center text-light fw-light border-bottom border-dark border-2 pb-4" id="1">¿Quienes Somos?</h2>
       </div>
       <div class="row pt-4">
         <div class="col-md-4">
-          <div class="text-center text-light" id="fondoIcon"><i class="fa-solid fa-plane"></i></div>
-          <p class="text-light">Lorem ipsum dolor sit amet. Et odit dolor eum sint consequatur ut sapiente
+          <div class="text-center text-light fondoIcon" id="fondoIcon1"><i class="fa-solid fa-plane" id="icono1"></i>
+          </div>
+          <p class="text-light parrafo1">Lorem ipsum dolor sit amet. Et odit dolor eum sint consequatur ut sapiente
             tenetur sed quia quibusdam qui optio repellendus. Sit facere galisum vel cupiditate omnis ut
             reprehenderit distinctio qui consequatur minus et unde quos. Sed velit accusantium ut asperiores
             expedita ut quas dolore et nobis unde est rerum corporis sit reiciendis sunt. Nam sint eligendi
@@ -104,7 +107,7 @@
         </div>
 
         <div class="col-md-4">
-          <p class="text-light">Lorem ipsum dolor sit amet. Et odit dolor eum sint consequatur ut sapiente
+          <p class="text-light parrafo2">Lorem ipsum dolor sit amet. Et odit dolor eum sint consequatur ut sapiente
             tenetur sed quia quibusdam qui optio repellendus. Sit facere galisum vel cupiditate omnis ut
             reprehenderit distinctio qui consequatur minus et unde quos. Sed velit accusantium ut asperiores
             expedita ut quas dolore et nobis unde est rerum corporis sit reiciendis sunt. Nam sint eligendi
@@ -112,12 +115,14 @@
             deleniti similique sit deleniti modi. In rerum sint vel perferendis porro quo deserunt
             reprehenderit aut quia similique eum minus praesentium. Aut officia deleniti ut tenetur aliquid
             qui iste doloribus ea eius earum.</p>
-          <div class="text-center text-light" id="fondoIcon"><i class="fa-solid fa-mountain"></i></div>
+          <div class="text-center text-light fondoIcon" id="fondoIcon2"><i class="fa-solid fa-mountain" id="icono1"></i>
+          </div>
         </div>
 
         <div class="col-md-4">
-          <div class="text-center text-light" id="fondoIcon"><i class="fa-solid fa-route"></i></div>
-          <p class="text-light">Lorem ipsum dolor sit amet. Et odit dolor eum sint consequatur ut sapiente
+          <div class="text-center text-light fondoIcon" id="fondoIcon3"><i class="fa-solid fa-route" id="icono1"></i>
+          </div>
+          <p class="text-light parrafo3">Lorem ipsum dolor sit amet. Et odit dolor eum sint consequatur ut sapiente
             tenetur sed quia quibusdam qui optio repellendus. Sit facere galisum vel cupiditate omnis ut
             reprehenderit distinctio qui consequatur minus et unde quos. Sed velit accusantium ut asperiores
             expedita ut quas dolore et nobis unde est rerum corporis sit reiciendis sunt. Nam sint eligendi
@@ -131,7 +136,7 @@
   </section>
 
   <!--cards section-->
-  <section class="d-md-block text-light" id="Destacados">
+  <section class="d-md-block text-light" id="2">
     <div class="container">
       <div id="bodyTitles">
         <h2 class="text-center fw-light pt-5 pb-4 text-light border-bottom border-dark border-2">Destacados</h2>
@@ -142,8 +147,8 @@
           <div class="col-md-3 col-12 mb-4">
 
             <div class="card h-100">
-              <img src="assets/img/card1.jpg" class="card-img-top img-fluid" alt="torresdelpaine" />
-              <div class="card-body">
+              <img src="assets/img/card1.jpg" class="card-img-top img-fluid" id="img1" alt="torresdelpaine" />
+              <div class="card-body" id="cb1">
                 <h5 class="card-title fw-bold">Torres del Paine</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.consectetur
@@ -152,12 +157,12 @@
               </div>
             </div>
           </div>
-          <!-- segundo -->
+          <!-- segunda -->
           <div class="col-md-3 col-12 mb-4">
 
             <div class="card h-100">
-              <img src="assets/img/card2.jpg" class="card-img-top img-fluid" alt="atacama" />
-              <div class="card-body">
+              <img src="assets/img/card2.jpg" class="card-img-top img-fluid" id="img2" alt="atacama" />
+              <div class="card-body" id="cb2">
                 <h5 class="card-title fw-bold">San Pedro de Atacama</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.consectetur
@@ -170,8 +175,8 @@
           <div class="col-md-3 col-12 mb-4">
 
             <div class="card h-100">
-              <img src="assets/img/card3.jpg" class="card-img-top img-fluid" alt="salaratacama" />
-              <div class="card-body">
+              <img src="assets/img/card3.jpg" class="card-img-top img-fluid" id="img3" alt="salaratacama" />
+              <div class="card-body" id="cb3">
                 <h5 class="card-title fw-bold">Salar de Atacama</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.consectetur
@@ -184,8 +189,8 @@
           <div class="col-md-3 col-12 mb-4">
 
             <div class="card h-100">
-              <img src="assets/img/card4.jpg" class="card-img-top img-fluid" alt="selvaValdiviana" />
-              <div class="card-body">
+              <img src="assets/img/card4.jpg" class="card-img-top img-fluid" id="img4" alt="selvaValdiviana" />
+              <div class="card-body" id="cb4">
                 <h5 class="card-title fw-bold">Selva Valdiviana</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.consectetur
@@ -200,7 +205,7 @@
   </section>
 
   <!--contacto section-->
-  <section id="bgSection">
+  <section id="3">
     <div class="container py-5 text-light">
       <div class="text-center" id="bodyTitles">
         <h2 class="fw-light border-bottom border-dark pb-4">Contacto</h2>
@@ -219,21 +224,26 @@
           placeholder="Escribe tu mensaje aquí"></textarea>
       </div>
       <div class="d-grid gap-2 d-flex">
-        <button type="button" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn btn-primary" toggle="tooltip" data-bs-placement="bottom"
+          title="Presiona para enviar correo" id="enviarCorreo">Enviar</button>
       </div>
     </div>
   </section>
 
   <!--footer section-->
-  <footer>
-    <div class="container row col-6 text-center">
-      <a href="#">Viajes Chile</a>
-      <span><a href="#"><i class="fa-brands fa-github"></i></a>
+  <footer class="px-5">
+    <div class="container row">
+      <div class="brand-name col-6">VIAJES CHILE</div>
+      <div class="social-icons col-6 justify-content-end">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-square-twitter"></i></a></span>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+    </div>
     </div>
   </footer>
+
 
   <script src="./assets/js/script.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
