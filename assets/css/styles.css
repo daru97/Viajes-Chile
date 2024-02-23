@@ -58,7 +58,7 @@ h1 {
 }
 
 .card-body,
-#fondoIcon,
+.fondoIcon,
 footer {
   background: var(--main-bg-color);
 }
