@@ -21,10 +21,7 @@ body {
     font-size: 28px;
     padding-top: 0px;
   }
- #principal{
-    width: 40rem;
-    height: auto;
- }
+
  #porciones{
   font-size: 1.2em;
  }
@@ -46,7 +43,7 @@ body {
   }
   
   .card-img-top{
-    height: auto;
+    height: 15rem;
     width: auto;
     border-radius: 0px;
   }
