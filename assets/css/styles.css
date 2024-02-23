@@ -14,10 +14,11 @@ body {
   font-size: 1.2rem;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   height: 2rem;
 }
-#nombre{
+
+#nombre {
   font-size: 1.2rem;
   color: #fff;
 }
@@ -38,7 +39,8 @@ h1 {
   color: #fff;
 
 }
-#icono1{
+
+#icono1 {
   font-size: 2rem;
 }
 
@@ -63,27 +65,23 @@ footer {
   background: var(--main-bg-color);
 }
 
-.grid-container {
-  display: grid;
-  column-gap: 50px;
+i {
+  color: #fff;
 }
 
-footer {
+footer div {
   color: #fff;
-  padding: 15px;
   display: flex;
-  justify-content: space-between;
-  bottom: 0;
-  width: 100%;
 }
 
 .brand-name {
-  padding-left: 20rem;
   font-size: 2rem;
   font-weight: 400;
+  padding-left: 20rem;
 }
 
 .social-icons {
-  padding-right: 20rem;
   font-size: 2rem;
+  padding-left: 38rem;
+
 }
