@@ -11,4 +11,10 @@ $(document).ready(function () {
     $("#fondoIcon3").click(function () {
         $(".parrafo3").toggle();
     });
+    $("h2").click(function () {
+        $(this).css({
+            "color": "#0dcaf0"
+        });
+    });
+
 });
